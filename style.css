@@ -21,16 +21,25 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 60px 20px 20px; /* Adjusted padding for fixed header */
     text-align: center;
     background-color: #fff; /* Default background for sections */
     border-bottom: 1px solid #eee; /* Subtle divider */
     height: 100vh;
     scroll-snap-align: start;
     box-sizing: border-box;
+    overflow-y: auto; /* Allow vertical scrolling within sections */
 }
 
 /* Specific section styling */
+.section-content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* Enable scrolling within the content area */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 #hero {
     background-color: #264653; /* Primary color */
     color: #fff;
