@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
+    // Hamburger menu
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('nav');
+
+    hamburgerMenu.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+
     // Project scroll indicator
     const projectsSection = document.getElementById('projects');
     const projectsGrid = projectsSection.querySelector('.projects-grid');

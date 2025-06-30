@@ -84,6 +84,28 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -299,12 +321,30 @@ footer {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav.active {
+        display: block;
+    }
+
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     .skills-grid,
