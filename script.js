@@ -28,6 +28,27 @@ document.addEventListener('DOMContentLoaded', () => {
         nav.classList.toggle('active');
     });
 
+    // Smooth scrolling for navigation links
+    navLinks.forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            // Close hamburger menu on click if open
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        });
+    });
+
     // Project scroll indicator
     const projectsSection = document.getElementById('projects');
     const projectsGrid = projectsSection.querySelector('.projects-grid');
