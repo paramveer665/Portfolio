@@ -1,24 +1,19 @@
 /* General Body and Typography */
-html {
-    height: 100%;
-    overflow: hidden; /* Prevent html from scrolling */
-}
-
-body {
-    height: 100%; /* Make body take full viewport height */
+body, html {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    overflow-y: auto; /* Enable scrolling for the entire page */
+    height: 100%;
+    overflow: hidden;
 }
 
-/* Container for sections */
-#sections-container {
-    /* Removed height and overflow properties to allow natural expansion */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 section {
@@ -30,6 +25,9 @@ section {
     text-align: center;
     background-color: #fff; /* Default background for sections */
     border-bottom: 1px solid #eee; /* Subtle divider */
+    height: 100vh;
+    scroll-snap-align: start;
+    box-sizing: border-box;
 }
 
 /* Specific section styling */
@@ -96,7 +94,8 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: #2A9D8F; /* Secondary color on hover */
 }
 
