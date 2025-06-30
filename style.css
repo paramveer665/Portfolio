@@ -194,6 +194,7 @@ nav ul li a.active {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    padding-bottom: 30px;
 }
 
 .project {
@@ -203,6 +204,7 @@ nav ul li a.active {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: left;
     scroll-snap-align: start;
+    padding: 80px;
 }
 
 .project h2 {
@@ -334,13 +336,15 @@ footer {
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 main::-webkit-scrollbar,
-.section-content::-webkit-scrollbar {
+.section-content::-webkit-scrollbar,
+.projects-grid::-webkit-scrollbar {
     display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 main,
-.section-content {
+.section-content,
+.projects-grid {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
