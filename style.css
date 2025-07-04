@@ -258,6 +258,8 @@ nav ul li a.active {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .project {
@@ -298,6 +300,9 @@ nav ul li a.active {
 .project-button {
     margin-right: 10px;
     margin-bottom: 10px; /* For stacking on small screens */
+    width: 25%;
+    padding: 10px;
+    text-align: center;
 }
 
 /* Scroll Indicator */
@@ -404,21 +409,57 @@ footer {
         
     }
 
-    .skills-grid,
-    .projects-grid {
+    .skills-grid {
         grid-template-columns: 1fr;
         width: 95%;
         max-height: 80vh;
         overflow-y: auto;
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+        width: 95%;
+        grid-auto-flow: row;
+        overflow: visible;
+    }
+
+    #projects {
+        height: auto;
+        overflow: visible;
+    }
+
+    #projects .section-content {
+        overflow: visible;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    #projects {
+        overflow-y: auto;
+    }
+
+    .project-links {
+        display: flex;
+        justify-content: center;
+    }
+
     .project-button {
         display: block;
-        width: 100%;
+        width: 50%;
     }
 
     #blog article {
         width: 95%;
+    }
+
+    .project p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     /* Adjust sections for natural scrolling on small screens */
