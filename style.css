@@ -473,6 +473,10 @@ footer {
         overflow-y: auto; /* Enable natural scrolling */
         scroll-snap-type: none; /* Disable scroll snapping */
     }
+
+    .scroll-indicator {
+        display: none;
+    }
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

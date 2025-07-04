@@ -63,6 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
 
+            if (targetId === '#skills') {
+                document.querySelector('.skills-grid').scrollTop = 0;
+            }
+
             if (targetSection) {
                 targetSection.scrollIntoView({
                     behavior: 'smooth'
