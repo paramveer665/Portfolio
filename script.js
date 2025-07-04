@@ -106,4 +106,64 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // --- SMOOTH SCROLLING FOR SECTIONS ---
+    let isThrottled = false;
+    let currentSectionIndex = 0;
+
+    // Update the current section index based on which section is in view
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const index = Array.from(sections).indexOf(entry.target);
+                if (index !== -1) {
+                    currentSectionIndex = index;
+                }
+            }
+        });
+    }, { threshold: 0.6 }); // Use a threshold of 0.6
+
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+
+    function handleMainScroll(evt) {
+        // Do not interfere with project grid scrolling
+        if (evt.target.closest('.projects-grid')) {
+            return;
+        }
+
+        // Prevent default browser scroll to implement our own logic
+        evt.preventDefault();
+
+        if (isThrottled) {
+            return; // Don't do anything if a scroll is already in progress
+        }
+        isThrottled = true;
+
+        // Set a timeout to reset the throttle flag.
+        // This ensures we only process one scroll action at a time.
+        setTimeout(() => {
+            isThrottled = false;
+        }, 800); // 800ms throttle period
+
+        const direction = evt.deltaY > 0 ? 1 : -1;
+        const nextSectionIndex = currentSectionIndex + direction;
+
+        if (nextSectionIndex >= 0 && nextSectionIndex < sections.length) {
+            sections[nextSectionIndex].scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    main.addEventListener('wheel', handleMainScroll, { passive: false });
+
+    // Horizontal scroll for projects grid
+    projectsGrid.addEventListener('wheel', (evt) => {
+        evt.preventDefault();
+        const scrollAmount = evt.deltaY > 0 ? projects[0].offsetWidth : -projects[0].offsetWidth;
+        projectsGrid.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
 });

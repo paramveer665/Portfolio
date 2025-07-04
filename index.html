@@ -15,23 +15,29 @@
 <body>
     <header>
         <div class="header-container">
-            <div class="logo">Your Name</div>
-            <button class="hamburger-menu" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div style="display: flex;"><div class="logo">Paramveer Chauhan</div></div>
+            
+            
             <nav>
                 <ul>
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
             </nav>
-            <button id="theme-toggle" aria-label="Toggle theme">
-                <i class="fas fa-sun"></i>
+            <div style="display: flex;">
+
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button><button  class="hamburger-menu" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
+            </div>
+                
+                
         </div>
     </header>
     <main>
@@ -43,17 +49,17 @@
             <section id="about">
                 <h1>About Me</h1>
                 <p>I am a passionate and results-driven software engineer with a strong foundation in web development. I specialize in creating robust, scalable, and user-friendly applications. My expertise includes [mention key technologies, e.g., JavaScript, Python, React, Node.js]. I am constantly seeking to learn new technologies and improve my skills to build innovative solutions.</p>
-                <p><a href="path/to/your/resume.pdf" download class="button">Download Resume</a></p>
+                <p><a href="https://drive.google.com/file/d/1js3K6SYgwEYa-mzD4TOZk8xDBAtoW67z/view?usp=drive_link" download class="button" target="_blank">Download Resume</a></p>
                 <div class="social-links-about">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link-about linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/yourprofile" target="_blank" class="social-link-about github"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://twitter.com/yourprofile" target="_blank" class="social-link-about twitter"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://yourwebsite.com" target="_blank" class="social-link-about website"><i class="fas fa-globe"></i> Website</a>
+                    <a href="https://linkedin.com/in/paramveer665" target="_blank" class="social-link-about linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/paramveer665" target="_blank" class="social-link-about github"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://twitter.com/paramveer665" target="_blank" class="social-link-about twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                    <!-- <a href="https://yourwebsite.com" target="_blank" class="social-link-about website"><i class="fas fa-globe"></i> Website</a> -->
                 </div>
             </section>
             <section id="skills">
                 <div class="section-content">
-                    <h1>My Skills</h1>
+                    <h1 style="padding-top: 30px;">My Skills</h1>
                     <div class="skills-grid">
                         <div class="skill-category">
                             <h2>Languages</h2>
@@ -98,66 +104,67 @@
 
                             Also, consider leading with your strongest 3-5 projects rather than overwhelming with quantity.
                         -->
-                        <div class="project">
-                        <h2>30Days-JavaScript-Challenge</h2>
-                        <p>30 Days of JavaScript Challenge Course 🍵❤️‍🔥 by Hitesh Choudhary (Founder of ChaiAurCode). Contributions are Opened, Feel Free to contribute in a better manner and only valid pull request get merged in the repository.</p>
+                        
+                    <div class="project">
+                        <h2>React-Bhojanalya</h2>
+                        <p>A fast and efficient food-ordering web application built using React.js and Parcel bundler deployed on Vercel. This project aims to provide a seamless and optimized experience for browsing restaurants, viewing menus, and placing orders.</p>
                         <div class="project-links">
-                            <a href="https://github.com/paramveer665/30Days-JavaScript-Challenge" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
+                            <a href="https://github.com/paramveer665/React-Bhojanalya" target="_blank" class="button project-button">GitHub Repo</a>
+                            <a href="https://react-bhojanalya.vercel.app/" target="_blank" class="button project-button live-demo-button">Live Demo</a>
                         </div>
                     </div>
                     <div class="project">
-                        <h2>cors-anywhere</h2>
-                        <p>CORS Anywhere is a NodeJS reverse proxy which adds CORS headers to the proxied request.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/paramveer665/cors-anywhere" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h2>ECOM</h2>
-                        <p>Not provided.</p>
+                        <h2>NextEcom</h2>
+                        <p>E-commerce Product Listing Page. Built a dynamic and responsive product listing page using Next.js and React with client-side interactivity. Integrated Fake Store API to display real-time product data with sorting and filtering capabilities</p>
                         <div class="project-links">
                             <a href="https://github.com/paramveer665/ECOM" target="_blank" class="button project-button">GitHub Repo</a>
+                            <a href="https://nextecom-three.vercel.app/" target="_blank" class="button project-button live-demo-button">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h2>Loan Emi Calculator</h2>
+                        <p>A modern loan calculator application that allows users to calculate loan EMIs (Equated Monthly Installments) View detailed amortization schedules</p>
+                        <div class="project-links">
+                            <a href="https://github.com/paramveer665/Emi-Calculator" target="_blank" class="button project-button">GitHub Repo</a>
+                            <a href="https://emi-calculator-mocha-five.vercel.app/" target="_blank" class="button project-button live-demo-button">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h2>Spotbucket</h2>
+                        <p>Interactive Map Interface:
+
+Effortlessly place markers on the map to indicate points of interest.
+Save coordinates and details for each marker.
+List and Location Management:
+
+Create and manage multiple lists with various themed locations.
+Seamless navigation from list view to detailed location information.
+Detailed Location View:
+
+View comprehensive details including name, description, and notes.
+Enjoy a user-friendly interface for a smooth experience.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/paramveer665/Spotbucket" target="_blank" class="button project-button">GitHub Repo</a>
                             <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
                         </div>
                     </div>
+                    
                     <div class="project">
                         <h2>GuessTheNumber</h2>
                         <p>This is a game which was developed as part of practicing Javascript and it was part of the exercise whos logic was totally developed in javascript.</p>
                         <div class="project-links">
                             <a href="https://github.com/paramveer665/GuessTheNumber" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
+                            <a href="https://paramveer665.github.io/GuessTheNumber/" target="_blank" class="button project-button live-demo-button">Live Demo</a>
                         </div>
                     </div>
-                    <!-- <div class="project">
-                        <h2>GuessTheNumber</h2>
-                        <p>This is a game which was developed as part of practicing Javascript and it was part of the exercise whos logic was totally developed in javascript.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/paramveer665/GuessTheNumber" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
-                        </div>
-                    </div> -->
-                    <!-- <div class="project">
-                        <div class="project">
-                        <h2>Hacktoberfest2024</h2>
-                        <p>Make your first Pull Request on Hacktoberfest 2024. Don't forget to spread love and if you like give us a ⭐️ </p>
-                        <div class="project-links">
-                            <a href="https://github.com/paramveer665/Hacktoberfest2024" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
-                        </div>
-                    </div>
-                        <div class="project-links">
-                            <a href="https://github.com/paramveer665/Hacktoberfest2024" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
-                        </div>
-                    </div> -->
+                    
+                    
                     <div class="project">
                         <h2>PigGame</h2>
                         <p>This is 2nd game which was developed as part of practicing Javascript and it was part of the exercise whos logic was totally developed in javascript.</p>
                         <div class="project-links">
                             <a href="https://github.com/paramveer665/PigGame" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
+                            <a href="https://paramveer665.github.io/PigGame/" target="_blank" class="button project-button live-demo-button">Live Demo</a>
                         </div>
                     </div>
                     <div class="project">
@@ -168,34 +175,22 @@
                             <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
                         </div>
                     </div>
-                    <div class="project">
-                        <h2>React-Bhojanalya</h2>
-                        <p>Not provided.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/paramveer665/React-Bhojanalya" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h2>Spotbucket</h2>
-                        <p>Not available.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/paramveer665/Spotbucket" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h2>TastyTrails</h2>
-                        <p>TastyTrails is a web application designed to explore delightful recipes from around the world. It leverages modern technologies to create an immersive culinary experience.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/paramveer665/TastyTrails" target="_blank" class="button project-button">GitHub Repo</a>
-                            <a href="#" target="_blank" class="button project-button live-demo-button">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
+                    
+                    
+                    
                 <div class="scroll-indicator">
                     <!-- Dots will be generated by JavaScript -->
                 </div>
+                </div>
+            </section>
+            
+            <section id="contact">
+                <h1>Contact Me</h1>
+                <p>Open to new opportunities. Let's connect!</p>
+                <div class="contact-links">
+                    <a href="mailto:paramveerchauhan665@gmail.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://linkedin.com/in/paramveer665" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/paramveer665" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </section>
             <section id="blog">
@@ -211,20 +206,12 @@
                     </article>
                 </div>
             </section>
-            <section id="contact">
-                <h1>Contact Me</h1>
-                <p>Open to new opportunities. Let's connect!</p>
-                <div class="contact-links">
-                    <a href="mailto:your.email@example.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/yourprofile" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </section>
         </div>
     </main>
     <footer>
         <p>&copy; 2025 Your Name</p>
     </footer>
     <script src="script.js"></script>
+    
 </body>
 </html>
