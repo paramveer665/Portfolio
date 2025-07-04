@@ -408,6 +408,8 @@ footer {
     .projects-grid {
         grid-template-columns: 1fr;
         width: 95%;
+        max-height: 80vh;
+        overflow-y: auto;
     }
 
     .project-button {
