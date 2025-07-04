@@ -155,6 +155,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    main.addEventListener('click', () => {
+        if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
+        }
+    });
+
     main.addEventListener('wheel', handleMainScroll, { passive: false });
 
     // Horizontal scroll for projects grid
