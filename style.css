@@ -15,7 +15,7 @@
 :root.light-theme {
     /* Light Theme Colors */
     --background-color: #f4f4f4;
-    --text-color: #333;
+    --text-color: #1d1e1e;
     --accent-color: #4A90E2;
     --hover-color: #218c7e;
     --card-background: #fff;
@@ -385,8 +385,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  height: 80vh;
-  width: 80vw;
+  height: 65vh;
+  width: 50vw;
   z-index: 0;
 }
 
@@ -520,10 +520,18 @@ main,
 }
 
 /* OPTIONAL: Make section backgrounds transparent to reveal Vanta */
-header,
-section,
-footer {
+
+section
+ {
   background: transparent !important;
+}
+
+h1{
+    color: #c7cacc !important;
+}
+
+.project p{
+    color:
 }
 
 .vanta-overlay {
