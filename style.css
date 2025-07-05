@@ -381,6 +381,15 @@ footer {
         display: block;
     }
 
+    #vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80vh;
+  width: 80vw;
+  z-index: 0;
+}
+
     nav {
         display: none;
         position: absolute;
@@ -517,3 +526,12 @@ footer {
   background: transparent !important;
 }
 
+.vanta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05); /* Adjust darkness here */
+  z-index: 1;
+}
