@@ -526,13 +526,11 @@ section
   background: transparent !important;
 }
 
-h1{
+h1,.social-link-about,.contact-link,#contact p,#about p,#hero p{
     color: #c7cacc !important;
 }
 
-.project p{
-    color:
-}
+
 
 .vanta-overlay {
   position: absolute;
