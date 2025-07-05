@@ -493,3 +493,27 @@ main,
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+/* Make Vanta full screen and behind content */
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+/* Make your content layered above */
+#content {
+  position: relative;
+  z-index: 1;
+}
+
+/* OPTIONAL: Make section backgrounds transparent to reveal Vanta */
+header,
+section,
+footer {
+  background: transparent !important;
+}
+
