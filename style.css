@@ -59,6 +59,10 @@ section {
     overflow-y: auto;
 }
 
+section h1{
+    font-size: 40px;
+}
+
 /* Specific section styling */
 .section-content {
     width: 100%;
@@ -78,6 +82,10 @@ section {
 
 #about {
     background-color: var(--card-background);
+
+}
+#about p{
+    width: 50rem;
 }
 
 #skills {
@@ -198,7 +206,7 @@ nav ul li a.active {
 
 .social-link-about {
     display: inline-block;
-    color: var(--text-color);
+    color: #c7cacc;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1.1em;
@@ -355,7 +363,7 @@ nav ul li a.active {
 
 .contact-link {
     display: inline-block;
-    color: var(--text-color);
+    color: #c7cacc;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1.1em;
@@ -436,6 +444,10 @@ footer {
     .hamburger-menu {
         display: block;
     }
+
+    #about p{
+    width: 25rem;
+}
 
     #vanta-bg {
   position: fixed;
@@ -582,9 +594,11 @@ section
   background: transparent !important;
 }
 
-h1,.social-link-about,.contact-link,#contact p,#about p,#hero p{
+h1,#contact p,#about p,#hero p{
     color: #c7cacc !important;
 }
+
+
 
 
 
