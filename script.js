@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const nav = document.querySelector('nav');
     const themeToggle = document.getElementById('theme-toggle');
+    const themeToggleFooter = document.getElementById('theme-toggle-footer');
     const projectsGrid = document.querySelector('.projects-grid');
     const viewResumeBtn = document.getElementById('view-resume-btn');
     const resumeOverlay = document.getElementById('resume-overlay');
@@ -18,14 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.classList.add(currentTheme);
         if (currentTheme === 'light-theme') {
             themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            if (themeToggleFooter) themeToggleFooter.innerHTML = '<i class="fas fa-moon"></i>';
         } else {
             themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            if (themeToggleFooter) themeToggleFooter.innerHTML = '<i class="fas fa-sun"></i>';
         }
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
         document.documentElement.classList.add('light-theme');
         themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        if (themeToggleFooter) themeToggleFooter.innerHTML = '<i class="fas fa-moon"></i>';
     } else {
         themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        if (themeToggleFooter) themeToggleFooter.innerHTML = '<i class="fas fa-sun"></i>';
     }
 
     themeToggle.addEventListener('click', () => {
@@ -33,12 +38,30 @@ document.addEventListener('DOMContentLoaded', () => {
             document.documentElement.classList.remove('light-theme');
             localStorage.setItem('theme', 'dark-theme');
             themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            if (themeToggleFooter) themeToggleFooter.innerHTML = '<i class="fas fa-sun"></i>';
         } else {
             document.documentElement.classList.add('light-theme');
             localStorage.setItem('theme', 'light-theme');
             themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            if (themeToggleFooter) themeToggleFooter.innerHTML = '<i class="fas fa-moon"></i>';
         }
     });
+
+    if (themeToggleFooter) {
+        themeToggleFooter.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('light-theme')) {
+                document.documentElement.classList.remove('light-theme');
+                localStorage.setItem('theme', 'dark-theme');
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                themeToggleFooter.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                document.documentElement.classList.add('light-theme');
+                localStorage.setItem('theme', 'light-theme');
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                themeToggleFooter.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+    }
 
     // Intersection observer for nav links
     const observer = new IntersectionObserver((entries) => {

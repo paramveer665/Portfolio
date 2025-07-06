@@ -23,7 +23,7 @@
     --shadow-color-dark: rgba(0, 0, 0, 0.1);
     --shadow-color-light: rgba(0, 0, 0, 0.05);
     --header-background: #fff;
-    --footer-background: #333;
+    --footer-background: #fff;
 }
 
 /* General Body and Typography */
@@ -380,6 +380,56 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.blog-footer {
+    background-color: var(--footer-background);
+    color: var(--text-color);
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom of the flex container */
+}
+
+.blog-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.blog-footer .footer-links a,
+.blog-footer .footer-social a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.blog-footer .footer-links a:hover,
+.blog-footer .footer-social a:hover {
+    color: var(--accent-color);
+}
+
+.blog-footer .footer-social i {
+    font-size: 1.5em;
+}
+
+#theme-toggle-footer {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+#theme-toggle-footer:hover {
+    color: var(--accent-color);
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
