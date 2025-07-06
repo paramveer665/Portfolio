@@ -608,7 +608,7 @@ h1,#contact p,#about p,#hero p{
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.05); /* Adjust darkness here */
+  background-color: rgba(0, 0, 0, 0.44); /* Adjust darkness here */
   z-index: 1;
 }
 
