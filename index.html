@@ -54,7 +54,10 @@
             <section id="about">
                 <h1>About Me</h1>
                 <p>I am a passionate and results-driven software engineer with a strong foundation in web development. I specialize in creating robust, scalable, and user-friendly applications. My expertise includes [mention key technologies, e.g., JavaScript, Python, React, Node.js]. I am constantly seeking to learn new technologies and improve my skills to build innovative solutions.</p>
-                <p><a href="https://drive.google.com/file/d/1js3K6SYgwEYa-mzD4TOZk8xDBAtoW67z/view?usp=drive_link" download class="button" target="_blank">Download Resume</a></p>
+                <div class="resume-buttons">
+                    <a href="https://drive.google.com/file/d/1js3K6SYgwEYa-mzD4TOZk8xDBAtoW67z/view?usp=drive_link" download class="button" target="_blank">Download Resume</a>
+                    <a href="#" id="view-resume-btn" class="button">View Resume</a>
+                </div>
                 <div class="social-links-about">
                     <a href="https://linkedin.com/in/paramveer665" target="_blank" class="social-link-about linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="https://github.com/paramveer665" target="_blank" class="social-link-about github"><i class="fab fa-github"></i> GitHub</a>
@@ -221,6 +224,13 @@ Enjoy a user-friendly interface for a smooth experience.</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.halo.min.js"></script>
     <script src="vanta.js"></script>
+
+    <div id="resume-overlay">
+        <div class="resume-content">
+            <span class="close-resume">&times;</span>
+            <iframe src="https://drive.google.com/file/d/1js3K6SYgwEYa-mzD4TOZk8xDBAtoW67z/preview" width="100%" height="100%" style="border:none;"></iframe>
+        </div>
+    </div>
 
 </div>
 </body>
