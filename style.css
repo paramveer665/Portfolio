@@ -81,11 +81,21 @@ section h1{
 }
 
 #about {
-    background-color: var(--card-background);
+    background-color: transparent;
 
 }
 #about p{
     width: 50rem;
+}
+
+.about-content {
+    background-color: rgba(27, 28, 29, 0.75);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px var(--shadow-color-dark), -5px -5px 15px var(--shadow-color-light);
 }
 
 #skills {
@@ -111,7 +121,11 @@ main {
 
 /* Header and Navigation */
 header {
-    background-color: var(--header-background);
+    background: rgba(255, 255, 255, 0.1); /* Frosted glass background */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     color: var(--text-color);
     padding: 1rem 0;
     position: fixed;
@@ -119,7 +133,6 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .header-container {
@@ -233,10 +246,13 @@ nav ul li a.active {
 }
 
 .skill-category {
-    background-color: var(--card-background);
+    background-color: rgba(27, 28, 29, 0.65); /* Semi-transparent */
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px var(--shadow-color-dark);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     color: var(--text-color);
 }
 
@@ -277,12 +293,13 @@ nav ul li a.active {
 }
 
 .project {
-    background-color: var(--card-background);
-    border: 1px solid var(--border-color);
+    background-color: rgba(27, 28, 29, 0.65);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 5px 5px 15px var(--shadow-color-dark),
-                -5px -5px 15px var(--shadow-color-light);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     text-align: left;
     scroll-snap-align: start;
     transition: all 0.3s ease;
@@ -342,14 +359,17 @@ nav ul li a.active {
 
 /* Blog Section */
 #blog article {
-    background-color: var(--card-background);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px var(--shadow-color-dark);
+    background: rgba(255, 255, 255, 0.1); /* Frosted glass background */
+    backdrop-filter: blur(30px) saturate(120%) brightness(1.2);
+    -webkit-backdrop-filter: blur(30px) saturate(120%) brightness(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     margin: 0 auto 20px;
     text-align: left;
     width: 80%;
     max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 #blog article h2 {
@@ -464,12 +484,23 @@ footer {
         top: 100%;
         right: 0;
         width: 50%;
-        background-color: var(--header-background);
+        background-color: rgba(23, 24, 25, 0.65);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 8px;
     }
 
     nav.active {
         display: block;
         align-items: end;   
+        background-color: rgba(23, 24, 25, 0.65);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border-radius: 8px;
     }
 
     nav ul {
